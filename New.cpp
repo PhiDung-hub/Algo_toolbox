@@ -13,12 +13,11 @@ void swap(int* a, int* b)
 }  
 int partition (int arr[], int low, int high)  
 {  
-    int pivot = arr[high]; // pivot  
-    int i = (low); // Index of smaller element  
+    int pivot = arr[high];  
+    int i = (low);   
   
     for (int j = low; j <= high - 1; j++)  
     {  
-        // If current element is smaller than the pivot  
         if (arr[j] < pivot)  
         {  
             swap(&arr[i], &arr[j]);  
@@ -52,7 +51,7 @@ int main()
 {  
     int n;
     cin >> n; 
-    int* arr[n];
+    int arr[n];
     for(int i=0; i<n; ++i)
         cin >> arr[i];
     quickSort(arr, 0, n - 1);  
