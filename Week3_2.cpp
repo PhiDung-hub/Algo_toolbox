@@ -69,7 +69,7 @@ int main()
     if ( (i >=1) && (((float)values[i]/weights[i]) > ((float) values[i-1]/weights[i-1])) ){
       swap(&values[i], &values[i-1]);
       swap(&weights[i], &weights[i-1]);
-    }
+    } // Tranh' worst case
   }
   quicksort(values, weights, 0, n-1);
 
